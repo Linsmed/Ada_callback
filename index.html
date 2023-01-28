@@ -17,11 +17,15 @@
           id="joke-img"
         />
       </div>
-      <div>
+      <div id="myJoke">
         <button onclick="tellAJoke()">Tell a joke</button>
+        <div class="roller"></div>
         <p id="setup"></p>
         <button id="btn1" onclick="tellPunchLine()">Punchline?</button>
         <p class="punchline"></p>
+      </div>
+      <div>
+        <button id="resetBtn-1" onclick="myReset()">Reset</button>
       </div>
     </main>
     <script src="index.js"></script>
