@@ -11,10 +11,7 @@ const tellAJoke = () => {
       (data) => (
         (setup.innerHTML = data.setup),
         (btn1.style.display = "block"),
-        (jokeimg.src =
-          "https://cdn.pixabay.com/photo/2017/01/06/17/01/smiley-1958283__340.png")(
-          (joke = data)
-        )
+        (joke = data)
       )
     )
     .catch((err) => console.log(err));
@@ -22,4 +19,6 @@ const tellAJoke = () => {
 
 const tellPunchLine = () => {
   punchline.innerHTML = joke.punchline;
+  jokeimg.src =
+    "https://cdn.pixabay.com/photo/2017/01/06/17/01/smiley-1958283__340.png";
 };
