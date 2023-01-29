@@ -1,13 +1,15 @@
 let setup = document.getElementById("setup");
 let btn1 = document.getElementById("btn1");
 let punchline = document.getElementsByClassName("punchline")[0];
-let jokeimg = document.getElementById("joke-img");
+const jokeimg = document.getElementById("joke-img");
 const resetbtn = document.getElementById("resetBtn-1");
 const haveFun = document.getElementById("btn1");
+const tellJoke = document.getElementById("btn2");
 const wait = document.querySelector(".roller");
 let joke = {};
 
 const tellAJoke = () => {
+  tellJoke.style.display = "block";
   wait.style.display = "block";
   haveFun.style.display = "block";
 
